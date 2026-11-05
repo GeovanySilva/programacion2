@@ -1,0 +1,44 @@
+EJERCICIOS CON ARREGLOS - PROGRAMACIÓN II
+Geovanny Gabriel Silva Coello
+
+Base: Semana 3 > Actividades de Evaluación > Ejercicios get_set_metodos POO.
+
+Se adaptaron cuatro ejercicios del documento:
+1. Usuario: todas las opciones trabajan sobre el arreglo completo con for y length.
+2. RegistroIP: ingreso de uno en uno; consulta y modificación por índice.
+3. SistemaSeguridad: registro de fallos, reinicio y consulta sobre todo el arreglo.
+4. SensorTemperatura: ingreso de uno en uno y operaciones por índice.
+
+Los dos últimos siguen las mismas modalidades porque la nueva consigna pide cuatro
+ejercicios, pero solo describe dos modalidades de forma explícita.
+
+Se usan ventanas JOptionPane para los ingresos. Así se mantiene la restricción
+«No usar Scanner» que aparece en varios ejercicios del documento original.
+Los métodos mostrarDatos, mostrarEstado y mostrarLectura imprimen en la consola.
+Los arreglos tienen capacidad de 3 objetos. Los índices empiezan en 0.
+Cancelar una operación parcial no ocupa una posición del arreglo.
+
+EJECUCIÓN EN INTELLIJ IDEA
+1. Cree un proyecto Java con JDK 17 (sin Maven ni Gradle).
+2. Copie las carpetas negocio e interfaz dentro de src.
+3. Ejecute por separado los cuatro Main de la carpeta interfaz.
+4. Mantenga visible la consola Run para leer los resultados.
+
+PRUEBAS MANUALES DE LOS MENÚS
+- Usuario: pruebe una clave corta; debe repetir la solicitud. Llene los tres
+  usuarios y pruebe mostrar, actualizar correos y cambiar contraseñas.
+- RegistroIP: consulte antes de ingresar; pruebe ingresar tres registros y un
+  cuarto; seleccione índices fuera de rango y cambie el permiso de un registro.
+- SistemaSeguridad: registre tres fallos; todos deben indicar Bloqueado.
+  Reinicie los contadores; deben indicar No bloqueado.
+- SensorTemperatura: pruebe texto como temperatura, valores negativos válidos,
+  arreglo lleno, actualización por índice y cancelación de los ingresos.
+
+Apoyo utilizado: ChatGPT. Instrucción de trabajo: adaptar cuatro ejercicios
+de get_set_metodos POO para usar arreglos de objetos en main, siguiendo la
+consigna de Ejercicios arreglos. Revise y ejecute el código para comprenderlo.
+
+VERIFICACIÓN REALIZADA
+Compilación correcta con Java 17. Pruebas de lógica correctas: validación de
+contraseñas, estado de permisos, bloqueo al tercer intento, reinicio y actualización
+de sensores. La interacción con ventanas debe verificarse en un entorno gráfico.
